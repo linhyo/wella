@@ -1,0 +1,173 @@
+@media (min-width: 1600px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+
+
+.wella-title {
+  font-family: @leafont;
+  text-transform: uppercase;
+
+}
+
+.wella-button {
+  background-color: #cd1041;
+  color: #fff;
+  //font-family: @bodfont;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 4px 20px 8px;
+  .transition();
+  &:hover, &:focus {
+    color: #fff;
+    .opacity(0.8);
+  }
+  @media (min-width: 1600px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+}
+
+#wella-banner {
+  position: relative;
+  @media (max-width: 767px) {
+    height: 350px;
+    background: url("../images/banner.png")no-repeat center center / cover;
+  }
+  .wella-logo {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+#wella-feature {
+
+}
+
+#wella-voucher {
+
+}
+
+#wella-form {
+
+}
+
+#wella-product {
+
+}
+
+#wella-footer {
+  background-color: #4f4d51;
+  padding: 10px 0;
+  p {
+    color: #fff;
+    font-family: @leafont;
+    text-transform: uppercase;
+    @media (min-width: 1600px) {
+      font-size: 20px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      font-size: 17px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 16px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 13px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+  .footer-logo {
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    img, p, span {
+      display: block;
+    }
+    span {
+      width: 1px;
+      height: 35px;
+      background-color: #fff;
+      margin: 10px 20px 0 10px;
+      vertical-align: top;
+    }
+    p {
+      vertical-align: top;
+    }
+  }
+  .social-network {
+    @media (min-width: 992px) {
+      margin-top: 5px;
+    }
+    @media (min-width: 768px) {
+      > div {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    ul {
+      white-space: nowrap;
+      li {
+        display: inline-block;
+        margin: 5px 0 0 10px;
+      }
+    }
+    p {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    @media (max-width: 767px) {
+      margin-top: 15px;
+      ul, p {
+        text-align: center;
+      }
+
+      ul {
+        margin-top: 15px;
+      }
+    }
+  }
+  .wella-icon {
+    display: inline-block;
+    background: no-repeat center center / 100% auto;
+    .opacity(0.6);
+    @media (min-width: 1600px) {
+      width: 40px;
+      height: 40px;
+    }
+    @media (max-width: 1599px) {
+      width: 32px;
+      height: 32px;
+    }
+    &.global {
+      background-image: url("../images/global-icon.png");
+    }
+    &.facebook {
+      background-image: url("../images/facebook-icon.png");
+    }
+  }
+}
+
+#wella-hotline {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10000;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
