@@ -1,47 +1,186 @@
 @media (min-width: 1600px) {
   .container {
-    width: 1440px;
+    width: 1560px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 880px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 700px;
   }
 }
 
+#wella-voucher, #wella-register, #wella-product {
+  .block-title {
+    @media (min-width: 1600px) {
+      margin-top: 50px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 991px) {
+      margin-top: 10px;
+    }
+  }
+}
 
+.no-padding {
+  padding: 0;
+}
 
-.wella-title {
-  font-family: @leafont;
-  text-transform: uppercase;
+figure.background {
+  img {
+    width: 100%;
+  }
+}
 
+.banner-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  .block-content {
+    position: relative;
+  }
+}
+
+.block-title {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  @media (min-width: 1600px) {
+    h2 {
+      font-size: 80px;
+    }
+    h3 {
+      font-size: 70px;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    h2 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 50px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    h2 {
+      font-size: 50px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+  }
+  h2 {
+    font-family: @chafont;
+    color: #1c1b1b;
+  }
+  h3 {
+    font-family: @leafont;
+    color: #d54178;
+  }
 }
 
 .wella-button {
-  background-color: #cd1041;
+  background-color: #d54178;
   color: #fff;
-  //font-family: @bodfont;
+  font-family: @leafont;
   text-transform: uppercase;
-  border: 2px solid #fff;
-  padding: 4px 20px 8px;
+  border: 2px solid #d54178;
+  padding: 4px 40px;
   .transition();
+  .border-radius(0);
   &:hover, &:focus {
     color: #fff;
     .opacity(0.8);
   }
   @media (min-width: 1600px) {
-    font-size: 24px;
+    font-size: 30px;
   }
   @media (min-width: 1200px) and (max-width: 1599px) {
-    font-size: 20px;
+    font-size: 26px;
   }
   @media (min-width: 992px) and (max-width: 1199px) {
-    font-size: 16px;
+    font-size: 22px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 18px;
   }
   @media (max-width: 767px) {
-    font-size: 15px;
+    font-size: 20px;
+  }
+}
+
+.service-text, .voucher-text, .product-name {
+  p {
+    font-family: @leafont;
+    text-transform: uppercase;
+    &.blue {
+      color: #7da7d9;
+    }
+    &.violet {
+      color: #bd8cbf;
+    }
+    &.purple {
+      color: #d54178;
+    }
+    &.green {
+      color: #c2de86;
+    }
+    &.darkgreen {
+      color: #2a8798;
+    }
+    .gray {
+      color: #959595;
+    }
+    @media (min-width: 1600px) {
+      font-size: 30px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      font-size: 24px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 22px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 18px;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 }
 
 #wella-banner {
   position: relative;
+  z-index: 10;
   @media (max-width: 767px) {
-    height: 350px;
+    height: 400px;
     background: url("../images/banner.png")no-repeat center center / cover;
   }
   .wella-logo {
@@ -50,29 +189,497 @@
     top: 0;
     left: 0;
   }
+  .branch-logo {
+    @media (min-width: 1600px) {
+      margin-top: 40px;
+    }
+    @media (min-width: 992px) and (max-width: 1599px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
+  .wella-slogan {
+    @media (min-width: 1600px) {
+      margin-top: 100px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      margin-top: 70px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 40px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+  .slogan-text {
+    position: relative;
+    padding-left: 28%;
+    @media (min-width: 1600px) {
+      margin-top: 10%;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      margin-top: 8%;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      padding-left: 20%;
+      margin-top: 5%;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding-left: 16%;
+      margin-top: 15px;
+    }
+    @media (max-width: 767px) {
+      padding-left: 5%;
+      margin-top: 10%;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      background: url("../images/quote-left.png") no-repeat center center / 100% auto;
+      @media (min-width: 1600px) {
+        left: 23%;
+        width: 75px;
+        height: 54px;
+      }
+      @media (min-width: 1200px) and (max-width: 1599px) {
+        left: 21%;
+        width: 60px;
+        height: 43px;
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        left: 13%;
+        width: 50px;
+        height: 36px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        left: 6%;
+        width: 40px;
+        height: 29px;
+      }
+    }
+    p {
+      color: #6a6969;
+      font-family: @shefont;
+      text-align: right;
+      > span {
+        color: #cd1041;
+        > span {
+          color: #793594;
+        }
+      }
+      @media (min-width: 1600px) {
+        font-size: 42px;
+      }
+      @media (min-width: 1200px) and (max-width: 1599px) {
+        font-size: 32px;
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        font-size: 26px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 22px;
+      }
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
-#wella-feature {
-
+#wella-service {
+  position: relative;
+  background-color: #f6e4e4;
+  z-index: 9;
+  @media (min-width: 768px) {
+    margin-top: -25%;
+    .block-content {
+      padding-top: 18%;
+    }
+  }
+  @media (max-width: 767px) {
+    background-color: #fefcfc;
+    margin-top: -10%;
+    padding-bottom: 20px;
+    .banner-text {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+  }
+  .block-title > div {
+    position: relative;
+    display: inline-block;
+    h2, h3 {
+      position: relative;
+      z-index: 1;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: -34px;
+      background: url("../images/pattern-1.png") no-repeat center center / 100% auto;
+      z-index: 0;
+      @media (min-width: 1600px) {
+        width: 463px;
+        height: 269px;
+        left: -18%;
+      }
+      @media (min-width: 1200px) and (max-width: 1599px) {
+        width: 380px;
+        height: 221px;
+        left: -28%;
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        width: 310px;
+        height: 180px;
+        left: -30%;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        width: 260px;
+        height: 151px;
+        left: -38%;
+        top: -20px;
+      }
+      @media (max-width: 767px) {
+        width: 280px;
+        height: 163px;
+        left: -44%;
+      }
+    }
+  }
+  .event-info {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      width: 18%;
+    }
+    @media (max-width: 767px) {
+      img {
+        width: 60%;
+        margin: 30px auto;
+      }
+    }
+  }
+  .service-item {
+    display: table;
+    @media (min-width: 1600px) {
+      margin-top: 60px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      margin-top: 40px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 25px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .service-img {
+    @media (min-width: 1200px) {
+      width: 35%;
+    }
+    @media (max-width: 1199px) {
+      width: 30%;
+    }
+  }
+  .service-text {
+    padding-left: 20px;
+    @media (min-width: 1200px) {
+      padding-right: 12%;
+    }
+    p {
+      display: inline-block;
+    }
+  }
 }
 
 #wella-voucher {
-
+  position: relative;
+  background-color: #d7d7d7;
+  @media (max-width: 767px) {
+    height: 650px;
+    background: url("../images/background-2.png")no-repeat center center / cover;
+  }
+  @media (max-width: 360px) {
+    height: 620px;
+  }
+  .block-title {
+    @media (min-width: 768px) {
+      text-align: left;
+      h3 {
+        width: 50%;
+      }
+    }
+  }
+  .voucher-text {
+    background-color: #dcd7db;
+    padding: 15px;
+    margin-top: 25px;
+    .border-radius(5px);
+  }
+  .voucher-detail {
+    @media (max-width: 767px) {
+      > div:first-child {
+        text-align: left !important;
+      }
+    }
+  }
+  .wella-product {
+    @media (max-width: 767px) {
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .voucher-info {
+    display: table;
+    padding: 0 15px;
+    @media (min-width: 1600px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 768px) {
+      .col-1, .col-2 {
+        display: table-cell;
+        width: 50%;
+        vertical-align: bottom;
+      }
+      .col-1 {
+        padding-right: 5%;
+      }
+      .col-2 {
+        padding-bottom: 4%;
+      }
+    }
+  }
 }
 
-#wella-form {
-
+#wella-register {
+  position: relative;
+  background-color: #d7d7d7;
+  overflow: hidden;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    background: url("../images/pattern-2.png") no-repeat center center / 100% auto;
+    z-index: 0;
+    @media (min-width: 1600px) {
+      width: 1000px;
+      height: 445px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      width: 700px;
+      height: 312px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      width: 550px;
+      height: 245px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 380px;
+      height: 169px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .cover-letter {
+    position: relative;
+    @media (min-width: 1200px) {
+      margin-top: -30px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-top: -10px;
+    }
+    @media (max-width: 767px) {
+      background-color: #fff;
+      padding: 30px;
+      margin-top: 30px;
+    }
+  }
+  .register-form {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 70px;
+      left: 0;
+    }
+    @media (min-width: 1600px) {
+      padding: 80px 130px;
+      .form-group {
+        margin-bottom: 60px;
+      }
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      padding: 40px 90px;
+      .form-group {
+        margin-bottom: 40px;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      padding: 10px 70px;
+      .form-group {
+        margin-bottom: 25px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding: 0 60px;
+      .form-group {
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 767px) {
+      .form-group {
+        margin-bottom: 25px;
+      }
+    }
+    .form-group {
+      border-bottom: 2px dashed #959595;
+    }
+    input {
+      background-color: transparent;
+      border: none;
+    }
+    .form-option {
+      height: 39px;
+      white-space: nowrap;
+      @media (max-width: 1199px) {
+        height: 33px;
+      }
+      input[type="radio"] {
+        display: none;
+        + span {
+          color: #959595;
+        }
+      }
+      input[type="radio"]:checked + span {
+        color: #d54178;
+      }
+    }
+    input, .form-option span {
+      font-family: @leafont;
+      color: #959595;
+      @media (min-width: 1600px) {
+        font-size: 30px;
+      }
+      @media (min-width: 1200px) and (max-width: 1599px) {
+        font-size: 26px;
+      }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        font-size: 22px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 18px;
+      }
+      @media (max-width: 767px) {
+        font-size: 22px;
+      }
+    }
+    .join-btn {
+      width: 100%;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .wella-hotline {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 25%;
+  }
 }
 
 #wella-product {
-
+  position: relative;
+  @media (max-width: 767px) {
+    height: 650px;
+    background: url("../images/background-3.jpg")no-repeat center center / cover;
+  }
+  @media (max-width: 360px) {
+    height: 620px;
+  }
+  .product-row {
+    @media (min-width: 1600px) {
+      margin-top: 80px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      margin-top: 50px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
+  .product-item {
+    border: 2px solid #fff;
+    @media (min-width: 992px) {
+      padding: 15px;
+    }
+    @media (max-width: 991px) {
+      padding: 10px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  .product-img {
+    img {
+      width: 100%;
+    }
+  }
+  .product-name {
+    margin-top: 15px;
+    text-align: center;
+    white-space: nowrap;
+    p {
+      color: #1c1b1b;
+      @media (max-width: 360px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .product-view {
+    text-align: center;
+    @media (min-width: 1600px) {
+      margin-top: 60px;
+    }
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      margin-top: 40px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
 }
 
 #wella-footer {
   background-color: #4f4d51;
   padding: 10px 0;
   p {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.6);
     font-family: @leafont;
     text-transform: uppercase;
     @media (min-width: 1600px) {
@@ -88,13 +695,18 @@
       font-size: 13px;
     }
     @media (max-width: 767px) {
-      font-size: 14px;
+      font-size: 15px;
     }
   }
   .footer-logo {
     > div {
       display: table-cell;
       vertical-align: middle;
+      @media (min-width: 768px) and (max-width: 991px) {
+        &:first-child {
+          width: 20%;
+        }
+      }
     }
     img, p, span {
       display: block;
@@ -115,6 +727,7 @@
       margin-top: 5px;
     }
     @media (min-width: 768px) {
+      float: right;
       > div {
         display: table-cell;
         vertical-align: middle;
@@ -126,9 +739,6 @@
         display: inline-block;
         margin: 5px 0 0 10px;
       }
-    }
-    p {
-      color: rgba(255, 255, 255, 0.6);
     }
     @media (max-width: 767px) {
       margin-top: 15px;
