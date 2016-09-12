@@ -602,6 +602,16 @@ figure.background img {
   top: 0;
   left: 0;
 }
+@media (max-width: 767px) {
+  #wella-banner .wella-logo {
+    width: 40%;
+  }
+}
+@media (max-width: 360px) {
+  #wella-banner .wella-logo {
+    width: 45%;
+  }
+}
 @media (min-width: 1600px) {
   #wella-banner .branch-logo {
     margin-top: 40px;
@@ -895,13 +905,13 @@ figure.background img {
 }
 @media (max-width: 767px) {
   #wella-voucher {
-    height: 650px;
-    background: url("../images/background-2.png") no-repeat center center / cover;
+    height: 660px;
+    background: #d7d7d7 url("../images/background-2.png") no-repeat 60% center / cover;
   }
 }
 @media (max-width: 360px) {
   #wella-voucher {
-    height: 620px;
+    height: 630px;
   }
 }
 @media (min-width: 768px) {
@@ -961,6 +971,11 @@ figure.background img {
   position: relative;
   background-color: #d7d7d7;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  #wella-register {
+    margin-top: -10px;
+  }
 }
 #wella-register:before {
   content: '';
@@ -1141,7 +1156,7 @@ figure.background img {
 @media (max-width: 767px) {
   #wella-product {
     height: 650px;
-    background: url("../images/background-3.jpg") no-repeat center center / cover;
+    background: url("../images/background-3.jpg") no-repeat 70% center / cover;
   }
 }
 @media (max-width: 360px) {
