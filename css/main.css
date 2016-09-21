@@ -940,6 +940,9 @@ figure.background img {
   }
 }
 @media (max-width: 767px) {
+  #wella-voucher .wella-product {
+    margin-bottom: 25px;
+  }
   #wella-voucher .wella-product img {
     width: 80%;
   }
@@ -962,9 +965,6 @@ figure.background img {
   }
   #wella-voucher .voucher-info .col-1 {
     padding-right: 5%;
-  }
-  #wella-voucher .voucher-info .col-2 {
-    padding-bottom: 4%;
   }
 }
 #wella-register {
