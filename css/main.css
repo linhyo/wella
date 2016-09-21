@@ -1094,6 +1094,11 @@ figure.background img {
     height: 33px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #wella-register .register-form .form-option {
+    height: 27px;
+  }
+}
 #wella-register .register-form .form-option input[type="radio"] {
   display: none;
 }
